@@ -1,0 +1,10 @@
+from sklearn.neighbors import KNeighborsClassifier
+
+# Create a KNN classifier object
+knn_classifier = KNeighborsClassifier(n_neighbors=5)
+
+# Train the classifier on the training data
+knn_classifier.fit(X_train, y_train)
+
+# Predict the target variable for the test data
+y_pred = knn_classifier.predict(X_test)
